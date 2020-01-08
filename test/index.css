@@ -1,0 +1,209 @@
+@charset "UTF-8";
+body {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  margin: 0 0;
+  overflow: hidden;
+}
+
+.uzu-wrapper1 {
+  height: 50px;
+  position: absolute;
+  width: 50px;
+  top: calc(50% - 50px);
+  left: calc(50% - 25px);
+  -webkit-transform: rotate(calc(0deg + (-60deg * (1 - 1))));
+          transform: rotate(calc(0deg + (-60deg * (1 - 1))));
+}
+
+.uzu-wrapper2 {
+  height: 50px;
+  position: absolute;
+  width: 50px;
+  top: calc(50% - 50px);
+  left: calc(50% - 25px);
+  -webkit-transform: rotate(calc(0deg + (-60deg * (2 - 1))));
+          transform: rotate(calc(0deg + (-60deg * (2 - 1))));
+}
+
+.uzu-wrapper3 {
+  height: 50px;
+  position: absolute;
+  width: 50px;
+  top: calc(50% - 50px);
+  left: calc(50% - 25px);
+  -webkit-transform: rotate(calc(0deg + (-60deg * (3 - 1))));
+          transform: rotate(calc(0deg + (-60deg * (3 - 1))));
+}
+
+.uzu-wrapper4 {
+  height: 50px;
+  position: absolute;
+  width: 50px;
+  top: calc(50% - 50px);
+  left: calc(50% - 25px);
+  -webkit-transform: rotate(calc(0deg + (-60deg * (4 - 1))));
+          transform: rotate(calc(0deg + (-60deg * (4 - 1))));
+}
+
+.uzu-wrapper5 {
+  height: 50px;
+  position: absolute;
+  width: 50px;
+  top: calc(50% - 50px);
+  left: calc(50% - 25px);
+  -webkit-transform: rotate(calc(0deg + (-60deg * (5 - 1))));
+          transform: rotate(calc(0deg + (-60deg * (5 - 1))));
+}
+
+.uzu-wrapper6 {
+  height: 50px;
+  position: absolute;
+  width: 50px;
+  top: calc(50% - 50px);
+  left: calc(50% - 25px);
+  -webkit-transform: rotate(calc(0deg + (-60deg * (6 - 1))));
+          transform: rotate(calc(0deg + (-60deg * (6 - 1))));
+}
+
+.uzu-pole {
+  height: 50px;
+  position: absolute;
+  -webkit-transform-origin: calc(100% - 25px) center;
+          transform-origin: calc(100% - 25px) center;
+  -webkit-transition: 2s;
+  transition: 2s;
+  width: 50px;
+}
+
+.uzu-pole-move {
+  -webkit-animation: anim 5s infinite linear;
+          animation: anim 5s infinite linear;
+}
+
+@-webkit-keyframes anim {
+  100% {
+    -webkit-transform: rotate(720deg);
+            transform: rotate(720deg);
+  }
+}
+
+@keyframes anim {
+  100% {
+    -webkit-transform: rotate(720deg);
+            transform: rotate(720deg);
+  }
+}
+
+.uzu-elm {
+  position: absolute;
+  display: block;
+  width: 5rem;
+  height: 5rem;
+  background: lightblue;
+  -webkit-transform: rotate(45deg) translateY(-50%) translateX(-50%) skew(calc((90deg - 60deg) / 2), calc((90deg - 60deg) / 2));
+          transform: rotate(45deg) translateY(-50%) translateX(-50%) skew(calc((90deg - 60deg) / 2), calc((90deg - 60deg) / 2));
+  top: -35px;
+  left: -18px;
+  border: solid #0000ff;
+}
+
+.uzu-pole-clear {
+  margin-top: calc(1000px / -2);
+  height: 1000px;
+}
+
+#loading {
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin: 0;
+}
+
+#loader-bg {
+  display: block;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  background: #000;
+  z-index: 1;
+}
+
+#title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateY(-50%) translateX(-50%);
+          transform: translateY(-50%) translateX(-50%);
+  font-size: 100px;
+}
+
+#main-contents {
+  display: none;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  overflow: hidden;
+}
+
+/* アイテム */
+#itemA {
+  -ms-grid-row: 1;
+  grid-row: 1;
+  -ms-grid-column: 1;
+  grid-column: 1;
+  background: #f88;
+}
+
+#itemB {
+  -ms-grid-row: 1;
+  grid-row: 1;
+  -ms-grid-column: 2;
+  grid-column: 2;
+  background: #8f8;
+}
+
+#itemC {
+  -ms-grid-row: 2;
+  grid-row: 2;
+  -ms-grid-column: 1;
+  grid-column: 1;
+  background: #88f;
+}
+
+#itemD {
+  -ms-grid-row: 2;
+  grid-row: 2;
+  -ms-grid-column: 2;
+  grid-column: 2;
+  background: #888;
+}
+
+.title-main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) rotate(45deg);
+          transform: translate(-50%, -50%) rotate(45deg);
+  width: 400px;
+  height: 400px;
+  background: #fff;
+}
+
+.title-main div {
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) rotate(-45deg);
+          transform: translate(-50%, -50%) rotate(-45deg);
+}
+/*# sourceMappingURL=index.css.map */

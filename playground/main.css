@@ -1,0 +1,99 @@
+@-webkit-keyframes passing-bar1 {
+  0% {
+    width: 0;
+  }
+  50% {
+    left: 0;
+    width: 100%;
+  }
+  100% {
+    left: 100%;
+    width: 0;
+  }
+}
+
+@keyframes passing-bar1 {
+  0% {
+    width: 0;
+  }
+  50% {
+    left: 0;
+    width: 100%;
+  }
+  100% {
+    left: 100%;
+    width: 0;
+  }
+}
+
+@-webkit-keyframes passing-bar2 {
+  50% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes passing-bar2 {
+  50% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+/* css */
+.passing .passing-box {
+  display: block;
+  text-align: center;
+  color: black;
+}
+
+.passing .passing-bar1 {
+  display: inline-block;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+  width: 0;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: #000;
+  mix-blend-mode: difference;
+}
+
+.passing .passing-bar2 {
+  display: inline-block;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+  width: 0;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: white;
+  mix-blend-mode: difference;
+}
+
+.passing .passing-txt {
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+  color: #fff;
+  font-size: 4.0rem;
+  font-weight: bold;
+  line-height: 1.5;
+  mix-blend-mode: difference;
+}
+
+.passing.move .passing-bar1 {
+  -webkit-animation: passing-bar1 1s ease-in-out forwards;
+          animation: passing-bar1 1s ease-in-out forwards;
+}
+
+.passing.move .passing-bar2 {
+  -webkit-animation: passing-bar2 1s ease-in-out forwards;
+          animation: passing-bar2 1s ease-in-out forwards;
+}
+/*# sourceMappingURL=main.css.map */

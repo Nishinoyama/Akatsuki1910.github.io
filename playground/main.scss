@@ -1,0 +1,55 @@
+@keyframes passing-bar1 {
+    0% {width: 0;}
+    50% {left: 0;width: 100%;}
+    100% {left: 100%;width: 0;}
+}
+@keyframes passing-bar2 {
+    50% {width: 0;}
+    100% {width: 100%;}
+}
+
+@mixin passing-bar {
+    display: inline-block;
+    transform: translate3d(0, 0, 0);
+    width: 0;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+/* css */
+.passing {
+    & .passing-box {
+        display: block;
+        text-align: center;
+        color: black;
+    }
+    & .passing-bar1 {
+        @include passing-bar;
+        background: #000;
+        mix-blend-mode: difference;
+    }
+    & .passing-bar2 {
+        @include passing-bar;
+        background: white;
+        mix-blend-mode: difference;
+    }
+    & .passing-txt {
+        transform: translate3d(0, 0, 0);
+        color: #fff;
+        font-size: 4.0rem;
+        font-weight: bold;
+        line-height: 1.5;
+        mix-blend-mode: difference;
+    }
+}
+
+.passing.move {
+    & .passing-bar1 {
+        animation: passing-bar1 1s ease-in-out forwards;
+    }
+    & .passing-bar2 {
+        animation: passing-bar2 1s ease-in-out forwards;
+    }
+}
