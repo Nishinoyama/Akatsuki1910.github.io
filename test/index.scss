@@ -171,17 +171,17 @@ z-index: 1;
         position: relative;
         display: inline-block;
         transform: translate3d(0, 0, 0);
-    }
-    & .passing-bar:before{
-        content: '';
-        display: inline-block;
-        width: 0;
-        height: 100%;
-        position: absolute;
-        left: 0;
-        top: 0;
-        z-index: 1;
-        background: #000;
+        &::before{
+            content: '';
+            display: inline-block;
+            width: 0;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: 1;
+            background: #000;
+        }
     }
     & .passing-txt{
         opacity: 0;
@@ -190,10 +190,10 @@ z-index: 1;
     }
 }
 .passing.move{
-    & .passing-bar:before {
+    & .passing-bar::before {
         animation: passing-bar 1s ease .5s 1 normal forwards;
     }
     & .passing-txt {
-        animation:passing-txt 0s ease 1s 1 normal forwards;
+        animation: passing-txt 0s ease 1s 1 normal forwards;
     }
 }
