@@ -5,4 +5,5 @@ $("body").on('click',()=>{
     $('#loader-bg').fadeOut(1000);
     $('#loader').fadeOut(500);
     $('#main-contents').css('display', 'grid');
+    $('.passing').addClass('move');
 });
