@@ -1,0 +1,26 @@
+{
+  "name": "akatsuki1910.github.io",
+  "version": "1.0.0",
+  "description": "完成系は[ここ](https://akatsuki1910.github.io)  \r 作成中は[ここ](https://akatsuki1910.github.io/test)",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Akatsuki1910/Akatsuki1910.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Akatsuki1910/Akatsuki1910.github.io/issues"
+  },
+  "homepage": "https://github.com/Akatsuki1910/Akatsuki1910.github.io#readme",
+  "devDependencies": {
+    "node-sass": "^4.13.1",
+    "sass-loader": "^8.0.2"
+  }
+}
