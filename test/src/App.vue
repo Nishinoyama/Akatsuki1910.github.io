@@ -5,6 +5,7 @@
 <script>
     // import HelloWorld from './components/HelloWorld.vue'
     import Title from './components/Title.vue'
+    // eslint-disable-next-line
     import $ from './jquery-3.3.1.min.js'
 
     export default {
